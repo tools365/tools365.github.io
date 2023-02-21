@@ -1,9 +1,228 @@
-<html>
- <head>
-  
- </head>
-<body>
-1111
-</body>
-</html> 
- 
+
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://www.jianavi.com/ -->
+<html style="font-size: 40px;">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>简约导航</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="keywords" content="简约导航">
+		<meta name="description" content="一个简单美观可自定义的网址导航">
+		<link rel="shortcut icon" href="https://www.jianavi.com/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+		<link rel="stylesheet" type="text/css" href="./static/css/yidong.css">
+		<!-- 本项目开源地址：https://github.com/appexplore/jianavi 请勿完全抄袭源码，请勿声明自己是原创 -->
+	</head>
+
+	<body>
+		<!-- 自定义按钮start -->
+		<div class="zdy_button" onclick="zyd_show();">
+			<img src="./static/cl.ico">
+		</div>
+		<!-- 自定义按钮end -->
+
+		<!-- 自定义弹窗start -->
+		<div class="zdy">
+			<div class="zdy_content">
+				<div class="zdy_top">
+					<span class="zdy_edit"></span>自定义链接
+					<span class="zdy_close" onclick="zdy_close();"></span>
+				</div>
+				<div class="zdy_mi">
+					<div class="z_m_i">
+						<span class="z_i_img_1"></span>
+						<input type="text" class="zdy_input zdy_name" placeholder="微博">
+					</div>
+					<div class="z_m_i">
+						<span class="z_i_img_2"></span>
+						<input type="text" class="zdy_input zdy_link" placeholder="http://www.weibo.com/">
+					</div>
+					<div>
+						<font size="2" color="gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请注意：数据是临时存储在本地电脑上，数据丢失无法找回</font>
+					</div>
+				</div>
+				<div class="zdy_foot">
+					<div class="zdy_false zdy_b" onclick="zdy_false();">取消</div>
+					<div class="zdy_true zdy_b" onclick="zdy_true();">确定</div>
+				</div>
+			</div>
+		</div>
+		<!-- 自定义弹窗end -->
+
+		<!-- 搜索栏start -->
+		<div class="baidu baidu-2">
+			<form name="f" action="https://fsoufsou.com/search" target="_blank">
+				<div class="Select-box-2" id="baidu">
+					<ul style="height: 48px;">
+						<li class="this_s">F 搜</li>
+						<li class="miji_s">duck</li>
+						<li class="bing_s">必 应</li>
+						<li class="google_s">谷 歌</li>
+						<li class="baidu_s">百 度</li>
+						<li class="ff_s">F 搜</li>
+					</ul>
+				</div>
+				<div class="in5">
+					<input name="q" id="kw-2" maxlength="100" autocomplete="off" type="text">
+					<div class="qingkong" id="qingkong" title="清空">x</div>
+				</div>
+				<input value="搜 索" id="su-2" type="submit">
+			</form>
+			<ul class="keylist"></ul>
+		</div>
+		<!-- 搜索栏end -->
+
+		<!-- 内容start -->
+		<div class="body">
+			<div class="content">
+				<div class="jianjie">
+					<div class="jj-list">
+						<div class="jj-list-tit">学习 · 生活</div>
+						<ul class="jj-list-con _b">
+							<li><a href="https://www.7pk.fun/" class="link-3" target="_blank" rel="nofollow">后台</a><div class="i_r_edit" onclick="zyd_edit('0');"></div></li>
+							<li><a href="https://www.7pk.fun:6001" class="link-3" target="_blank" rel="nofollow">爱快</a><div class="i_r_edit" onclick="zyd_edit('1');"></div></li>
+							<li><a href="https://www.7pk.fun:9001" class="link-3" target="_blank" rel="nofollow">可道云</a><div class="i_r_edit" onclick="zyd_edit('2');"></div></li>
+							<li><a href="https://www.7pk.fun:8888/5b7b7a82/" class="link-3" target="_blank" rel="nofollow">宝塔</a><div class="i_r_edit" onclick="zyd_edit('3');"></div></li>
+							<li><a href="http://www.7pk.fun:9299" class="link-3" target="_blank" rel="nofollow">Gitblit</a><div class="i_r_edit" onclick="zyd_edit('4');"></div></li>
+							<li><a href="http://www.7pk.fun:8848/nacos/index.html" class="link-3" target="_blank" rel="nofollow">NACOS</a><div class="i_r_edit" onclick="zyd_edit('5');"></div></li>
+							<li><a href="http://www.7pk.fun:2122" class="link-3" target="_blank" rel="nofollow">Jpom</a><div class="i_r_edit" onclick="zyd_edit('6');"></div></li>
+							<li><a href="http://www.7pk.fun:5600/" class="link-3" target="_blank" rel="nofollow">青龙</a><div class="i_r_edit" onclick="zyd_edit('7');"></div></li>				
+							<li><a href="http://www.7pk.fun:6002/" class="link-3" target="_blank" rel="nofollow">路由</a><div class="i_r_edit" onclick="zyd_edit('8');"></div></li>
+						</ul>
+					</div>
+					<div class="jj-list">
+						<div class="jj-list-tit">常用 · 社区</div>
+						<ul class="jj-list-con _b">
+							<li><a href="https://www.toutiao.com/" class="link-3" target="_blank" rel="nofollow">今日头条</a><div class="i_r_edit" onclick="zyd_edit('9');"></div></li>
+							<li><a href="https://www.qidian.com/" class="link-3" target="_blank" rel="nofollow">起点</a><div class="i_r_edit" onclick="zyd_edit('10');"></div></li>
+							<li><a href="https://github.com/" class="link-3" target="_blank" rel="nofollow">GitHub</a><div class="i_r_edit" onclick="zyd_edit('11');"></div></li>
+							<li><a href="http://doc.ruoyi.vip/" class="link-3" target="_blank" rel="nofollow">RuoYi</a><div class="i_r_edit" onclick="zyd_edit('12');"></div></li>
+							<li><a href="https://www.hutool.cn/docs/index.html" class="link-3" target="_blank" rel="nofollow">hutool</a><div class="i_r_edit" onclick="zyd_edit('13');"></div></li>
+							<li><a href="https://gitee.com/" class="link-3" target="_blank" rel="nofollow">Gitee</a><div class="i_r_edit" onclick="zyd_edit('14');"></div></li>
+							<li><a href="http://www.fyrsks.com/" class="link-3" target="_blank" rel="nofollow">小说</a><div class="i_r_edit" onclick="zyd_edit('15');"></div></li>
+							<li><a href="https://topbook.cc/overview" class="link-3" target="_blank" rel="nofollow">Topbook</a><div class="i_r_edit" onclick="zyd_edit('16');"></div></li>
+							<li><a href="https://www.v2ex.com/" class="link-3" target="_blank" rel="nofollow">V2EX</a><div class="i_r_edit" onclick="zyd_edit('17');"></div></li>
+						</ul>
+					</div>
+					<div class="jj-list">
+						<div class="jj-list-tit">邮箱 · 娱乐</div>
+						<ul class="jj-list-con _b">
+							<li><a href="https://mail.aliyun.com/" class="link-3" target="_blank" rel="nofollow">阿里邮箱</a><div class="i_r_edit" onclick="zyd_edit('18');"></div></li>
+							<li><a href="https://mail.sina.com.cn/" class="link-3" target="_blank" rel="nofollow">新浪邮箱</a><div class="i_r_edit" onclick="zyd_edit('19');"></div></li>
+							<li><a href="https://mail.qq.com/" class="link-3" target="_blank" rel="nofollow">腾讯邮箱</a><div class="i_r_edit" onclick="zyd_edit('20');"></div></li>
+							<li><a href="https://mail.163.com/" class="link-3" target="_blank" rel="nofollow">网易邮箱</a><div class="i_r_edit" onclick="zyd_edit('21');"></div></li>
+							<li><a href="https://v.qq.com/" class="link-3" target="_blank" rel="nofollow">腾讯视频</a><div class="i_r_edit" onclick="zyd_edit('22');"></div></li>
+							<li><a href="https://music.163.com/" class="link-3" target="_blank" rel="nofollow">网易音乐</a><div class="i_r_edit" onclick="zyd_edit('23');"></div></li>
+							<li><a href="https://dianyi.ng/" class="link-3" target="_blank" rel="nofollow">电影先生</a><div class="i_r_edit" onclick="zyd_edit('24');"></div></li>
+							<li><a href="https://ddys.tv/" class="link-3" target="_blank" rel="nofollow">低端影视</a><div class="i_r_edit" onclick="zyd_edit('25');"></div></li>
+							<li><a href="http://www.zzzfun.com/" class="link-3" target="_blank" rel="nofollow">ZzzFun</a><div class="i_r_edit" onclick="zyd_edit('26');"></div></li>
+						</ul>
+					</div>
+					<div class="jj-list">
+						<div class="jj-list-tit">发现 · 世界</div>
+						<ul class="jj-list-con _b">
+							<li><a href="https://mvnrepository.com/" class="link-3" target="_blank" rel="nofollow">mvn仓库</a><div class="i_r_edit" onclick="zyd_edit('27');"></div></li>
+							<li><a href="https://developer.aliyun.com/mvn/guide" class="link-3" target="_blank" rel="nofollow">mvn阿里</a><div class="i_r_edit" onclick="zyd_edit('28');"></div></li>
+							<li><a href="https://www.alidns.com/" class="link-3" target="_blank" rel="nofollow">阿里dns</a><div class="i_r_edit" onclick="zyd_edit('29');"></div></li>
+							<li><a href="https://developer.aliyun.com/mirror/" class="link-3" target="_blank" rel="nofollow">阿里镜像</a><div class="i_r_edit" onclick="zyd_edit('30');"></div></li>
+							<li><a href="https://home.console.aliyun.com/home/dashboard/ProductAndService" class="link-3" target="_blank" rel="nofollow">阿里云</a><div class="i_r_edit" onclick="zyd_edit('31');"></div></li>
+							<li><a href="https://jandan.net/" class="link-3" target="_blank" rel="nofollow">煎蛋</a><div class="i_r_edit" onclick="zyd_edit('32');"></div></li>
+							<li><a href="https://youquhome.com/" class="link-3" target="_blank" rel="nofollow">有趣网址</a><div class="i_r_edit" onclick="zyd_edit('33');"></div></li>
+							<li><a href="https://ac.scmor.com/" class="link-3" target="_blank" rel="nofollow">思谋学术</a><div class="i_r_edit" onclick="zyd_edit('34');"></div></li>
+							<li><a href="https://houxu.app/" class="link-3" target="_blank" rel="nofollow">后续</a><div class="i_r_edit" onclick="zyd_edit('35');"></div></li>
+							
+						</ul>
+					</div>
+					<div class="jj-list">
+						<div class="jj-list-tit">在线 · 工具</div>
+						<ul class="jj-list-con _b">
+							<li><a href="https://www.photopea.com/" class="link-3" target="_blank" rel="nofollow">在线PS</a><div class="i_r_edit" onclick="zyd_edit('36');"></div></li>
+							<li><a href="https://musetransfer.com/" class="link-3" target="_blank" rel="nofollow">收发文件</a><div class="i_r_edit" onclick="zyd_edit('37');"></div></li>
+							<li><a href="https://cli.im/" class="link-3" target="_blank" rel="nofollow">二维码</a><div class="i_r_edit" onclick="zyd_edit('38');"></div></li>
+							<li><a href="https://temp-mail.org/zh/" class="link-3" target="_blank" rel="nofollow">临时邮箱</a><div class="i_r_edit" onclick="zyd_edit('39');"></div></li>
+							<li><a href="https://www.storytrain.info/" class="link-3" target="_blank" rel="nofollow">临时短信</a><div class="i_r_edit" onclick="zyd_edit('40');"></div></li>
+							<li><a href="https://convertio.co/zh/" class="link-3" target="_blank" rel="nofollow">格式转换</a><div class="i_r_edit" onclick="zyd_edit('41');"></div></li>
+							<li><a href="http://www.html22.com/zh/" class="link-3" target="_blank" rel="nofollow">文档下载</a><div class="i_r_edit" onclick="zyd_edit('42');"></div></li>
+							<li><a href="https://weibomiaopai.com/" class="link-3" target="_blank" rel="nofollow">视频下载</a><div class="i_r_edit" onclick="zyd_edit('43');"></div></li>
+							<li><a href="https://www.eggvod.cn/music/" class="link-3" target="_blank" rel="nofollow">音乐下载</a><div class="i_r_edit" onclick="zyd_edit('44');"></div></li>
+						</ul>
+					</div>
+					<div class="jj-list">
+						<div class="jj-list-tit">搜索 · 资源</div>
+						<ul class="jj-list-con _b">
+							<li><a href="https://cupfox.app/" class="link-3" target="_blank" rel="nofollow">茶杯狐</a><div class="i_r_edit" onclick="zyd_edit('45');"></div></li>
+							<li><a href="https://www.dy2018.com/" class="link-3" target="_blank" rel="nofollow">电影天堂</a><div class="i_r_edit" onclick="zyd_edit('46');"></div></li>
+							<li><a href="https://www.soukuzhan.com/" class="link-3" target="_blank" rel="nofollow">搜酷站</a><div class="i_r_edit" onclick="zyd_edit('47');"></div></li>
+							<li><a href="https://tools.miku.ac/" class="link-3" target="_blank" rel="nofollow">MikuTools</a><div class="i_r_edit" onclick="zyd_edit('48');"></div></li>
+							<li><a href="https://www.coolist.net/" class="link-3" target="_blank" rel="nofollow">酷软清单</a><div class="i_r_edit" onclick="zyd_edit('49');"></div></li>
+							<li><a href="https://www.ghxi.com/" class="link-3" target="_blank" rel="nofollow">果核剥壳</a><div class="i_r_edit" onclick="zyd_edit('50');"></div></li>
+							<li><a href="https://www.jiumodiary.com/" class="link-3" target="_blank" rel="nofollow">电子书</a><div class="i_r_edit" onclick="zyd_edit('51');"></div></li>
+							<li><a href="https://pixabay.com/zh/photos/" class="link-3" target="_blank" rel="nofollow">图片素材</a><div class="i_r_edit" onclick="zyd_edit('52');"></div></li>
+							<li><a href="https://bookfere.com/" class="link-3" target="_blank" rel="nofollow">书伴</a><div class="i_r_edit" onclick="zyd_edit('53');"></div></li>
+						</ul>
+					</div>
+					<!-- 自定义按钮start -->
+					<div class="jj-list zdy_list" style="display: none;">
+						<div class="jj-list-tit">自定义</div>
+						<ul class="jj-list-con zdy_li">
+						</ul>
+					</div>
+					<!-- 自定义按钮end -->
+				</div>
+				<!-- 内容end -->
+
+				<!-- 底部版权start -->
+				<!-- 开源不易，请勿去除下方版权信息 -->
+				<!-- 如果您想修改下方版权信息，请打赏并留言您的网址 >> https://afdian.net/@appts -->
+				
+				<div class="footer1">Copyright © 2022
+					<a href="https://hi.appts.cn/" style="color:#ffffff;" target="_blank" rel="nofollow">软件探索 </a>
+					<a href="https://support.qq.com/products/93263" style="color:#ffffff;" target="_blank" rel="nofollow">反馈</a>
+					<a href="https://support.qq.com/products/93263/faqs/66548" style="color:#ffffff;" target="_blank" rel="nofollow">支持我们 </a>
+				</div>
+			</div>
+
+			<div class="footer">Copyright © 2022
+				<a href="https://hi.appts.cn/" style="color:#ffffff;" target="_blank" rel="nofollow">软件探索 </a>
+				<a href="https://support.qq.com/products/93263" style="color:#ffffff;" target="_blank" rel="nofollow">反馈</a>
+				<a href="https://support.qq.com/products/93263/faqs/66548" style="color:#ffffff;" target="_blank" rel="nofollow">支持我们 </a>
+				<!-- <a href="https://www.jianavi.com/random.html" style="color:#ffffff;" target="_blank" rel="nofollow">随机背景 </a> -->
+			</div>
+			<!-- 底部版权end -->
+		</div>
+
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="./static/js/js.js"></script>
+		<script type="text/javascript" >
+			$(function(){
+				$.get("https://www.7pk.fun/prod-api/weather/nav/all",{},(res)=>{
+					
+					if(res.code===200){
+					
+						$(".jianjie").html("");
+						var index=0;
+						for(const l of  res.data){
+							var _div=	'<div class="jj-list">'+
+									'<div class="jj-list-tit">'+l.label+'</div>'+
+									'<ul class="jj-list-con _b"> ';
+									
+							for(const v of l.value){
+								_div += '<li><a href="'+v.url+'" class="link-3" target="_blank" rel="nofollow">'+v.label+'</a><div class="i_r_edit" onclick="zyd_edit('+index+');"></div></li>'
+								index++;
+							}		
+								_div +=' </ul> </div>';
+							$(".jianjie").append(_div);	
+						}
+						
+					}
+				})	
+				
+			})
+			
+		</script>
+	</body>
+</html>
